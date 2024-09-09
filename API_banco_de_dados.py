@@ -38,7 +38,7 @@ def criar_usuario():
     try:
         
         cursor = bd.cursor()
-        datetime.strptime(data_nascimento, '%m-%d-%Y')
+        
         cursor.execute(
             """
             INSERT INTO atv.usuario (cpf, nome, data_nascimento) VALUES (%s,%s,%s)
