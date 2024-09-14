@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 def conectar():
     bd = psycopg2.connect(
-        host="database-1.cqryy0a1cnxv.us-east-1.rds.amazonaws.com",
+        host="amazon-endpoint",
         database="postgres",
         user="professor",
         password="professor"
